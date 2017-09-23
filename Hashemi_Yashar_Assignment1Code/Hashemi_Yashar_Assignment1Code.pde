@@ -1,3 +1,6 @@
+  //Yashar Hashemi
+  //Assignment1
+   
    void setup() {
        size(400, 400);
        stroke(0); 
