@@ -5,7 +5,7 @@ class Source{
   Source(float x, float y){
     location = new PVector(x, y); 
     mass = 50;
-    G = 5; 
+    G = .4; 
   }
   
   //attracts a mover object to the source

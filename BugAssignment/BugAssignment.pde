@@ -1,23 +1,32 @@
-Source s;
+
 bug b; 
 PVector wind;
+ 
+Source s; 
 
 void setup(){
-  s = new Source(); 
-  b = new bug(random(0, width), random(0,height));
-  background(0);
-  size(500,500);
-  s.display();
-  wind = new PVector(0.1, 0); 
  
+  
+  b = new bug(random(0, width), random(0,height));
+  background(255);
+  size(500,500);
+
+  wind = new PVector(0.1, 0); 
+  s = new Source(random(0, width), random(0,height));
   
 }
 void draw() {
- b.attract(s.loc.x, s.loc.y);
- b.applyForce(wind); 
+  PVector attr= s.attract(b); 
+ b.checkEdges();
+ b.applyForce(wind);
+ b.applyForce(attr); 
+ 
+ //b.checkEdges(); 
+ b.reverseMovement();
 
  b.update();
  b.display();
+ s.display(); 
 
 
 }
