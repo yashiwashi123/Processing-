@@ -1,6 +1,5 @@
-# Processing-
-This repository contains material for my Programming Nature class. I am learning how to 
-model physical systems and produce lab reports. My projects exemplify my 
-understanding of graphical programming as well as technical writing. 
+# Processing / Programming Nature #
+This repository contains material for my Programming Nature class. I learned how to 
+model physical systems, produce lab reports, and create GUI's. 
 
-My final project is the RagDollReal file which is a Lazy River simulator. 
+My final project can be played with [here](https://www.openprocessing.org/sketch/492311). It is a Lazy River simulator. 
